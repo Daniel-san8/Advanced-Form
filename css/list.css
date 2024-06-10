@@ -7,8 +7,23 @@
   gap: 1.5rem;
 }
 
+.number {
+  border: 1px solid hsl(231, 100%, 99%);
+  border-radius: 50%;
+  padding: 0.5rem;
+  color: hsl(231, 100%, 99%);
+}
+
 .text_item {
-  margin-left: 0.6rem;
+  margin-left: 1.4rem;
   color: hsl(0, 0%, 100%);
-  font-weight: 500;
+  font-weight: bolder;
+  font-size: 0.9rem;
+}
+
+#step {
+  font-size: 0.8rem;
+  color: hsl(231, 11%, 63%);
+  font-weight: normal;
+  margin-left: 0.6rem;
 }
