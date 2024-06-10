@@ -1,4 +1,5 @@
 .bg_side_bar {
-  height: 90%;
-  display: flex;
+  height: 95%;
+  padding: 0.7rem 1rem;
+  z-index: -1;
 }
