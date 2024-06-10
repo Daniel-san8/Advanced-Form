@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
 body {
   background-color: hsl(217, 100%, 97%);
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Ubuntu", sans-serif;
 }
