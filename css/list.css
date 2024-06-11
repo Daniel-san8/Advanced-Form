@@ -17,7 +17,6 @@
 .list_itens li {
   color: hsl(0, 0%, 100%);
   font-weight: bolder;
-  position: relative;
 }
 
 .list_itens li::before {
@@ -29,25 +28,3 @@
   border-radius: 50%;
   color: hsl(231, 100%, 99%);
 }
-
-/* .number {
-  border: 1px solid hsl(231, 100%, 99%);
-  padding: 0.5rem;
-  color: hsl(231, 100%, 99%);
-  box-sizing: border-box;
-  border-radius: 50%;
-}
-
-.text_item {
-  margin-left: 2.5rem;
-  color: hsl(0, 0%, 100%);
-  font-weight: bolder;
-  font-size: 0.7rem;
-}
-
-#step {
-  font-size: 0.8rem;
-  color: hsl(231, 11%, 63%);
-  font-weight: normal;
-  margin-left: 0.6rem;
-} */
