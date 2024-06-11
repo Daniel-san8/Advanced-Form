@@ -17,6 +17,7 @@
 .list_itens li {
   color: hsl(0, 0%, 100%);
   font-weight: bolder;
+  cursor: pointer;
 }
 
 .list_itens li::before {
