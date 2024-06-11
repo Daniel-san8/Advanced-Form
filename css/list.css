@@ -9,7 +9,7 @@
   counter-reset: item;
 }
 
-.list_itens span {
+.list_itens .description {
   margin-left: 2.9rem;
   color: hsl(0, 0%, 100%);
 }
@@ -28,4 +28,9 @@
   padding: 0.5rem;
   border-radius: 50%;
   color: hsl(231, 100%, 99%);
+}
+
+.steps {
+  color: gray;
+  font-size: 0.8rem;
 }
