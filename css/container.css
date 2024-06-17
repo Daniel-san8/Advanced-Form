@@ -1,6 +1,7 @@
 .container {
   background-color: white;
-  width: 80%;
+  width: 60%;
   height: 80%;
   border-radius: 1rem;
+  position: relative;
 }
