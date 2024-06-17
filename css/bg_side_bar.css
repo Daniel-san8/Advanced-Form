@@ -1,4 +1,11 @@
-.bg_side_bar {
+.caixa-sidebar {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  margin-left: 0.8rem;
+  position: relative;
+}
+
+.caixa-sidebar img {
   height: 95%;
-  padding: 0.7rem 1rem;
 }
