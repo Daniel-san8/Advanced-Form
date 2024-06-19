@@ -14,3 +14,14 @@
 .info p {
   color: hsl(229, 24%, 87%);
 }
+
+.info form {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.info form input {
+  padding: 0.7rem;
+}
