@@ -39,7 +39,7 @@
   display: flex;
   justify-content: center;
   align-self: flex-end;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   border-radius: 5px;
   border: 1px solid transparent;
   color: hsl(231, 100%, 99%);
@@ -48,4 +48,6 @@
 
 .info button:hover {
   cursor: pointer;
+  background-color: hsl(243, 100%, 62%);
+  transition: 0.3s;
 }
