@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  font-weight: bold;
 }
 
 .list li {
@@ -18,4 +19,6 @@
   content: counter(numero);
   color: black;
   margin-right: 1rem;
+  color: white;
+  font-weight: bold;
 }
