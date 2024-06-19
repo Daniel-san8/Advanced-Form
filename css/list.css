@@ -5,10 +5,13 @@
   position: absolute;
   top: 4rem;
   left: 4rem;
-
   display: flex;
   flex-direction: column;
   gap: 3rem;
+}
+
+.list li {
+  counter-increment: numero;
 }
 
 .list li::before {
