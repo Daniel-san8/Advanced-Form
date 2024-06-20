@@ -1,0 +1,30 @@
+.numbers {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: transparent;
+  color: white;
+
+  top: 3rem;
+  left: 3rem;
+
+  gap: 2.3rem;
+  width: 3%;
+
+  align-items: center;
+}
+
+.numbers span {
+  display: inline-block;
+
+  border: 1px solid hsl(231, 100%, 99%);
+  padding: 0.5rem 0.8rem;
+
+  border-radius: 50%;
+}
+
+.numbers span:hover {
+  cursor: pointer;
+}
