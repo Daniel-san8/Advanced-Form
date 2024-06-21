@@ -5,6 +5,7 @@
   border-radius: 1rem;
   overflow: hidden;
   display: flex;
+  flex-direction: row;
   position: relative;
 }
 

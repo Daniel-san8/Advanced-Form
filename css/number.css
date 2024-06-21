@@ -16,7 +16,7 @@
   align-items: center;
 }
 
-.numbers span {
+.numbers > span {
   display: inline-block;
 
   border: 1px solid hsl(231, 100%, 99%);
@@ -25,6 +25,6 @@
   border-radius: 50%;
 }
 
-.numbers span:hover {
+.numbers > span:hover {
   cursor: pointer;
 }
