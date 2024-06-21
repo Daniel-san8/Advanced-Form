@@ -12,6 +12,9 @@
 .options > span {
   display: flex;
 }
+.options > span:hover {
+  cursor: pointer;
+}
 
 .span-especial {
   margin-top: 0.4rem;
