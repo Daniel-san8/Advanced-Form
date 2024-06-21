@@ -55,3 +55,13 @@
   background-color: hsl(243, 100%, 62%);
   transition: 0.3s;
 }
+
+@media (max-width: 1030px) {
+  .info form {
+    margin-top: 0;
+  }
+
+  .info {
+    margin: 2rem 2rem;
+  }
+}
