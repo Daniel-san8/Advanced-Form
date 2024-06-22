@@ -21,27 +21,34 @@
 @media (max-width: 810px) {
   .container {
     width: 90%;
-    height: calc(100% + 20%);
+    height: calc(100% + 15%);
     display: grid;
     margin-top: 3rem;
-    z-index: 9999 !important;
   }
   .options {
     display: none !important;
   }
 
   .container-img {
-    height: 100%;
+    height: 80%;
     width: 100%;
     border-radius: 0.3rem;
     margin: 0;
     justify-self: center;
+    object-fit: cover;
+  }
+
+  .op {
+    position: relative !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
 
   .numbers {
     flex-direction: row !important;
-    left: 12rem !important;
-    gap: 1.5rem;
+    left: auto !important;
+    top: -13rem !important;
   }
 
   .numbers > span {
@@ -49,8 +56,19 @@
     font-size: 1rem !important;
     padding: 0.8rem !important;
     width: 1.5rem !important;
-    align-items: center !important;
     justify-content: center !important;
-    font-weight: bold !important;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 630px) {
+  .numbers {
+    top: -11rem !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .numbers {
+    top: -9rem !important;
   }
 }
