@@ -2,10 +2,19 @@
   display: none !important;
 }
 
+.labelRequired::after {
+  content: "This field is required";
+  color: hsl(354, 84%, 57%) !important;
+  font-weight: bold;
+  position: absolute;
+  right: 1rem;
+  font-size: 0.8rem;
+}
+
 .inputValidateJs {
-  border: 1px solid greenyellow !important;
+  border: 2px solid rgba(0, 173, 239, 0.8) !important;
 }
 
 .inputInvalidateJs {
-  border: 1px solid hsl(354, 84%, 57%) !important;
+  border: 2px solid hsl(354, 84%, 57%) !important;
 }

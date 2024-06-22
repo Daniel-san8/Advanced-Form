@@ -21,7 +21,7 @@
 @media (max-width: 810px) {
   .container {
     width: 90%;
-    height: calc(100% + 15%);
+    height: calc(100% + 17%);
     display: grid;
     margin-top: 3rem;
   }
