@@ -1,3 +1,11 @@
 .noneJs {
   display: none !important;
 }
+
+.inputValidateJs {
+  border: 1px solid greenyellow !important;
+}
+
+.inputInvalidateJs {
+  border: 1px solid red !important;
+}

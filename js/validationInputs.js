@@ -5,7 +5,11 @@ export default function validationInputs() {
   inputEmail.addEventListener("change", () => {
     if (rgxEmail.test(inputEmail.value)) {
       console.log("VALIDADO!!");
+      inputEmail.classList.remove("inputInvalidateJs");
       inputEmail.classList.add("inputValidateJs");
+    } else {
+      inputEmail.classList.remove("inputValidateJs");
+      inputEmail.classList.add("inputInvalidateJs");
     }
   });
 }
