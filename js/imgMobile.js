@@ -5,7 +5,6 @@ export default function imgMobile() {
     const imgMobileJs = "./images/bg-sidebar-mobile.svg";
 
     if (mediaQueryJs) {
-      imgDesktop.setAttribute("src", imgMobileJs);
     }
   });
 }
