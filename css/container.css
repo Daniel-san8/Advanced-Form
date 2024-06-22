@@ -8,10 +8,14 @@
   position: relative;
 }
 
-.container img {
+.container-img {
   display: flex;
   align-items: center;
   margin-left: 0.8rem;
   height: 95%;
   margin-top: 0.8rem;
+}
+
+.container-img-none {
+  display: none !important;
 }
