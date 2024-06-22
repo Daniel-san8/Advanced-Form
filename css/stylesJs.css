@@ -7,5 +7,5 @@
 }
 
 .inputInvalidateJs {
-  border: 1px solid red !important;
+  border: 1px solid hsl(354, 84%, 57%) !important;
 }
