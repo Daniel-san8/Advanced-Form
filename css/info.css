@@ -66,15 +66,10 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 815px) {
   .info form button {
     padding: 0.8rem 3rem;
     text-wrap: nowrap;
-  }
-}
-
-@media (max-width: 800px) {
-  .info {
     margin: 1rem;
   }
 }

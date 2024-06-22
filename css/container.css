@@ -1,3 +1,5 @@
+@import url("./options.css");
+
 .container {
   background-color: white;
   width: 60%;
@@ -18,4 +20,19 @@
 
 .container-img-none {
   display: none !important;
+}
+
+@media (max-width: 810px) {
+  .container {
+    width: 90%;
+    display: grid;
+  }
+  .options {
+    display: none !important;
+  }
+
+  .container-img {
+    height: 30%;
+    width: 90%;
+  }
 }
