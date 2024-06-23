@@ -13,4 +13,13 @@ export default function clickNumbers() {
       }
     });
   });
+
+  options.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      for (let i = 0; i < options.length; i++) {
+        options[i].classList.remove("numberClickJs");
+        console.log(options[i]);
+      }
+    });
+  });
 }
