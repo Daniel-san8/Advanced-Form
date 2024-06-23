@@ -25,7 +25,7 @@ export default function clickNumbers() {
         numbers[1].classList.add("numberClickJs");
       } else if (e.target == options[2]) {
         numbers[2].classList.add("numberClickJs");
-      } else {
+      } else if (e.target == options[3]) {
         numbers[3].classList.add("numberClickJs");
       }
     });
