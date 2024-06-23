@@ -9,13 +9,14 @@ export default function clickNumbers() {
   const selections = [options, numbers];
 
   selections[0].forEach((item) => {
-    item.addEventListener("click", clickNumber());
+    item.addEventListener("click", () => {});
   });
   selections[1].forEach((item) => {
-    item.addEventListener("click", clickNumber());
+    item.addEventListener("click", () => {
+      if (item.classList.contains("numberClickJs")) {
+        item.classList.remove("numberClickJs");
+      }
+      item.classList.add("numberClickJs");
+    });
   });
-
-  function clickNumber() {
-    console.log(numbers[0]);
-  }
 }

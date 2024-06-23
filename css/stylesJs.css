@@ -20,6 +20,8 @@
 }
 
 .numberClickJs {
-  background-color: hsl(228, 100%, 84%);
-  color: black;
+  background-color: hsl(206, 94%, 87%) !important;
+  color: black !important;
+  font-weight: bold !important;
+  border: 1px solid transparent !important;
 }
