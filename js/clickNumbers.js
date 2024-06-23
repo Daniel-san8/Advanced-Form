@@ -1,22 +1,15 @@
 export default function clickNumbers() {
-  const numbers = Array.from(
-    document.querySelectorAll('[data-numbers="number"]')
-  );
-  const options = Array.from(
-    document.querySelectorAll('[data-options="option"]')
-  );
+  const numbers = document.querySelectorAll('[data-numbers="number"]');
 
-  const selections = [options, numbers];
+  const options = document.querySelectorAll('[data-options="option"]');
 
-  selections[0].forEach((item) => {
-    item.addEventListener("click", () => {});
-  });
-  selections[1].forEach((item) => {
-    item.addEventListener("click", () => {
-      if (item.classList.contains("numberClickJs")) {
-        item.classList.remove("numberClickJs");
+  numbers.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      if (true) {
+        e.target.classList.add("numberClickJs");
+        console.log("number clicked");
       }
-      item.classList.add("numberClickJs");
     });
+    item.classList.remove("numberClickJs");
   });
 }
