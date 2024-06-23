@@ -18,3 +18,8 @@
 .inputInvalidateJs {
   border: 2px solid hsl(354, 84%, 57%) !important;
 }
+
+.numberClickJs {
+  background-color: hsl(228, 100%, 84%);
+  color: black;
+}

@@ -6,3 +6,4 @@ import clickNumbers from "./clickNumbers.js";
 imgMobile();
 validationInputs();
 mudancaDeEvent();
+clickNumbers();
