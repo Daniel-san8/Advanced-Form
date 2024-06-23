@@ -5,11 +5,12 @@ export default function clickNumbers() {
 
   numbers.forEach((item) => {
     item.addEventListener("click", (e) => {
+      for (let i = 0; i < numbers.length; i++) {
+        numbers[i].classList.remove("numberClickJs");
+      }
       if (true) {
         e.target.classList.add("numberClickJs");
-        console.log("number clicked");
       }
     });
-    item.classList.remove("numberClickJs");
   });
 }
