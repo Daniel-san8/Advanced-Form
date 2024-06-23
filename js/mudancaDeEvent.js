@@ -4,7 +4,7 @@ export default function mudancaDeEvent() {
     buttonElement.addEventListener("click", (event) => {
       event.preventDefault();
       const elementForm1 = document.querySelector('[data-form="1"');
-      // elementForm1.classList.add("noneJs");
+      elementForm1.classList.add("noneJs");
     });
   });
 }
