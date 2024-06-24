@@ -29,8 +29,8 @@ export default function mudancaDeEvent() {
         elementForm2.classList.add("noneJs");
         break;
       case "select plan":
-        elementForm1.classList.remove("noneJs");
-        elementForm2.classList.add("noneJs");
+        elementForm1.classList.add("noneJs");
+        elementForm2.classList.remove("noneJs");
         break;
       case "add-ons":
         console.log(option);
