@@ -3,9 +3,11 @@ import mudancaDeEvent from "./mudancaDeEvent.js";
 import validationInputs from "./validationInputs.js";
 import clickNumbers from "./clickNumbers.js";
 import nextAndBack from "./nextAndBack.js";
+import selectPlans from "./selectPlans.js";
 
 imgMobile();
 validationInputs();
 mudancaDeEvent();
 clickNumbers();
 nextAndBack();
+selectPlans();
