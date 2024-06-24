@@ -19,23 +19,39 @@
   color: hsl(231, 11%, 63%);
 }
 
-.ball {
-  width: 12px;
-  height: 12px;
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 50%;
-  transition: transform 0.5s ease;
+.toggleElement {
+  position: relative;
+  width: 50px;
+  height: 24px;
 }
 
-#meuBotao {
-  padding: 5px;
-  width: 45px;
-  height: 20px;
+.toggleElement input[type="checkbox"] {
+  display: none;
+}
+
+.toggleElement label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 24px;
   background-color: hsl(213, 96%, 18%);
-  color: #fff;
+  border-radius: 12px;
   cursor: pointer;
-  align-items: center;
-  display: flex;
-  justify-content: start;
-  margin-bottom: 0.8rem;
+}
+
+.toggleElement label:before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.toggle input:checked + label:before {
+  transform: translateX(26px);
 }
