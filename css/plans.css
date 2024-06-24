@@ -20,5 +20,13 @@
   color: hsl(213, 96%, 18%);
   font-weight: bold;
   margin-left: 1rem;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
+}
+
+.plans-items span {
+  display: inline-block;
+  color: hsl(229, 24%, 87%);
+  font-size: 0.8rem;
+  margin-left: 1rem;
+  margin-top: 0.4rem;
 }
