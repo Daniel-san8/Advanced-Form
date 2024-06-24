@@ -36,8 +36,8 @@
   margin-bottom: 0.8rem;
 }
 
-@media (max-width: 1160px) {
-  .plans {
-    gap: 0.3rem;
+@media (max-width: 1122px) {
+  .plans-items {
+    width: 6rem;
   }
 }
