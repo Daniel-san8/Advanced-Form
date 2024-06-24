@@ -65,3 +65,34 @@
     text-wrap: nowrap;
   }
 }
+
+@media (max-width: 965px) {
+  .mountandyear {
+    width: 80%;
+    align-self: center;
+    margin-bottom: 2rem;
+  }
+  .info.step2 button {
+    padding: 0.2rem 2rem;
+    text-wrap: wrap;
+  }
+}
+
+@media (max-width: 880px) {
+  .mountandyear {
+    margin-bottom: 0rem;
+  }
+  .info.step2 button {
+    padding: 0.2rem 2rem;
+    text-wrap: wrap;
+    margin: 0 1.5rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 880px) {
+  .info.step2 {
+    margin: 1rem 0;
+    overflow: scroll;
+  }
+}

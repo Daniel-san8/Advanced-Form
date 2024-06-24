@@ -41,3 +41,34 @@
     width: 6rem;
   }
 }
+
+@media (max-width: 1000px) {
+  .plans {
+    gap: 0.3rem;
+  }
+}
+
+@media (max-width: 965px) {
+  .plans-items {
+    width: 5rem;
+    height: 100%;
+  }
+  .plans-items img {
+    margin-left: 0.4rem;
+    margin-top: 0.3rem;
+  }
+  .plans-items p {
+    margin-left: 0.4rem;
+    font-size: 0.8rem;
+  }
+  .plans-items span {
+    font-size: 0.6rem;
+    margin-left: 0.4rem;
+  }
+}
+
+@media (max-width: 880px) {
+  .plans {
+    gap: 0;
+  }
+}
