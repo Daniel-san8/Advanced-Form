@@ -63,14 +63,32 @@
 
             <div class="mountandyear">
                 <span>Monthly</span>
-                <button class="botao"></button>
-                <div class="bola"></div>
+                <button id="meuBotao">
+                    <div class="ball"></div>
+                </button>
                 <span id="yearly">Yearly</span>
             </div>
             <button data-button>Next Step</button>
         </div>
     </div>
     <script type="module" src="./js/geral.js"></script>
+
+
+
+
+    <script>
+        const meuBotao = document.getElementById('meuBotao');
+        const ball = document.querySelector('.ball');
+
+        meuBotao.addEventListener('click', () => {
+            // Muda a cor da bola
+            ball.style.backgroundColor = '#27ae60';
+
+            // Move a bola para o lado oposto
+            ball.style.transform = 'translateX(100px)';
+        });
+
+    </script>
 </body>
 
 </html>
