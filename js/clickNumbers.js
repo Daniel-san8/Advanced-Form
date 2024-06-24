@@ -8,7 +8,7 @@ export default function clickNumbers() {
       for (let i = 0; i < numbers.length; i++) {
         numbers[i].classList.remove("numberClickJs");
       }
-      if (true) {
+      if (!e.target.classList.contains("numberClickJs")) {
         e.target.classList.add("numberClickJs");
       }
     });
@@ -19,13 +19,13 @@ export default function clickNumbers() {
       for (let i = 0; i < options.length; i++) {
         numbers[i].classList.remove("numberClickJs");
       }
-      if (e.target == options[0]) {
+      if (e.target === options[0]) {
         numbers[0].classList.add("numberClickJs");
-      } else if (e.target == options[1]) {
+      } else if (e.target === options[1]) {
         numbers[1].classList.add("numberClickJs");
-      } else if (e.target == options[2]) {
+      } else if (e.target === options[2]) {
         numbers[2].classList.add("numberClickJs");
-      } else if (e.target == options[3]) {
+      } else if (e.target === options[3]) {
         numbers[3].classList.add("numberClickJs");
       }
     });
