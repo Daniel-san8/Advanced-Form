@@ -24,4 +24,5 @@
   color: black;
   font-weight: bold;
   border: 1px solid transparent !important;
+  transition: 0.3s;
 }
