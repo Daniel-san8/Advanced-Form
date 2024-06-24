@@ -96,3 +96,29 @@
     overflow: scroll;
   }
 }
+
+@media (max-width: 810px) {
+  .info.step2 button {
+    padding: 0.8rem 3rem;
+    text-wrap: nowrap;
+    margin: 1rem;
+  }
+
+  .info.step2 {
+    margin: 1.125rem 2rem;
+  }
+
+  .plans {
+    gap: 1rem;
+  }
+  .plans-items {
+    width: 10rem;
+    height: 100%;
+  }
+  .plans-items img,
+  .plans-items p,
+  .plans-items span {
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+}
