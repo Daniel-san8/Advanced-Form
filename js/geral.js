@@ -5,6 +5,7 @@ import clickNumbers from "./clickNumbers.js";
 import nextAndBack from "./nextAndBack.js";
 import selectPlans from "./selectPlans.js";
 import eventToggle from "./eventToggle.js";
+import plansItems from "./plansItems.js";
 
 imgMobile();
 validationInputs();
@@ -13,3 +14,4 @@ clickNumbers();
 nextAndBack();
 selectPlans();
 eventToggle();
+plansItems();

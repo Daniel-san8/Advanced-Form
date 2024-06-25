@@ -51,3 +51,12 @@
   color: hsl(213, 96%, 18%) !important;
   transition: 0.2s;
 }
+
+[data-span="plan-time"].ativo:after {
+  content: "2 months free";
+  display: inline-block;
+  margin-top: 0.2rem;
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
+  font-size: 0.8rem;
+}
