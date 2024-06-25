@@ -34,5 +34,10 @@
 
 .toggleElementJs.ativo::before {
   left: 2rem;
-  transition: transform 0.3s ease;
+  transition: 0.3s;
+}
+
+.toggleElementJs.desativado::before {
+  left: 0.25rem;
+  transition: 0.3s;
 }
