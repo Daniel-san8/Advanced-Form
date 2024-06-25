@@ -59,4 +59,14 @@
   color: hsl(213, 96%, 18%);
   font-weight: bold;
   font-size: 0.7rem;
+  animation: mymove 0.3s forwards;
+}
+
+@keyframes mymove {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
