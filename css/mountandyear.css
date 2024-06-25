@@ -18,7 +18,7 @@
   font-size: 0.9rem;
 }
 
-#yearly {
+.mountandyear > .yearly {
   color: hsl(231, 11%, 63%);
 }
 

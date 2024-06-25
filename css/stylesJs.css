@@ -41,3 +41,13 @@
   left: 0.25rem;
   transition: 0.3s;
 }
+
+.monthly.desativado {
+  color: hsl(231, 11%, 63%);
+  transition: 0.2s;
+}
+
+.yearly.ativo {
+  color: hsl(213, 96%, 18%) !important;
+  transition: 0.2s;
+}
