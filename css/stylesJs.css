@@ -29,4 +29,10 @@
 
 .plans-items.labelStyleJs {
   border: 1px solid hsl(243, 100%, 62%);
+  transition: 0.3s;
+}
+
+.toggleElementJs.ativo::before {
+  left: 2rem;
+  transition: transform 0.3s ease;
 }
