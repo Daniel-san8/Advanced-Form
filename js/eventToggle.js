@@ -5,8 +5,8 @@ export default function eventToggle() {
   const yearly = document.querySelector(".yearly");
   elementToggle.addEventListener("click", () => {
     if (elementToggleLabel.classList.contains("ativo")) {
-      elementToggleLabel.classList.remove("ativo");
       elementToggleLabel.classList.add("desativado");
+      elementToggleLabel.classList.remove("ativo");
       monthly.classList.remove("desativado");
       yearly.classList.remove("ativo");
     } else {
