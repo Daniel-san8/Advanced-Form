@@ -30,9 +30,11 @@ export default function mudancaDeEvent() {
     if (number === 1) {
       elementForm1.classList.remove("noneJs");
       elementForm2.classList.add("noneJs");
+      count = 0;
     } else if (number === 2) {
       elementForm1.classList.add("noneJs");
       elementForm2.classList.remove("noneJs");
+      count = 1;
     }
   }
 
@@ -40,17 +42,21 @@ export default function mudancaDeEvent() {
     let option = e.target.innerHTML.toLowerCase();
     switch (option) {
       case "your info":
+        count = 0;
         elementForm1.classList.remove("noneJs");
         elementForm2.classList.add("noneJs");
         break;
       case "select plan":
+        count = 1;
         elementForm1.classList.add("noneJs");
         elementForm2.classList.remove("noneJs");
         break;
       case "add-ons":
+        count = 2;
         console.log(option);
         break;
       case "summary":
+        count = 3;
         console.log(option);
         break;
     }
