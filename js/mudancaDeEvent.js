@@ -13,7 +13,9 @@ export default function mudancaDeEvent() {
           case 0:
             count++;
             elementForm1.classList.add("noneJs");
+            numbers[1].classList.add("numberClickJs");
             elementForm2.classList.remove("noneJs");
+            numbers[0].classList.remove("numberClickJs");
             break;
           case 1:
             count++;
