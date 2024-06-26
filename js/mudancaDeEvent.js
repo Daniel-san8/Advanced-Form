@@ -1,12 +1,25 @@
 export default function mudancaDeEvent() {
-  const buttonElement = document.querySelector("[data-button]");
+  const buttonElement = document.querySelectorAll("[data-button]");
   const elementForm1 = document.querySelector('[data-form="1"');
   const elementForm2 = document.querySelector('[data-form="2"]');
   const numbers = document.querySelectorAll('[data-numbers="number"]');
   const options = document.querySelectorAll('[data-options="option"]');
+  let count = 0;
   window.addEventListener("load", () => {
-    buttonElement.addEventListener("click", (event) => {
-      event.preventDefault();
+    buttonElement.forEach((button) => {
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+        switch (count) {
+          case 0:
+            count++;
+            elementForm1.classList.add("noneJs");
+            elementForm2.classList.remove("noneJs");
+            break;
+          case 1:
+            count++;
+            elementForm2.classList.add("noneJs");
+        }
+      });
     });
   });
 
