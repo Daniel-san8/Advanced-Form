@@ -4,6 +4,7 @@ export default function mudancaDeEvent() {
   const elementForm2 = document.querySelector('[data-form="2"]');
   const numbers = document.querySelectorAll('[data-numbers="number"]');
   const options = document.querySelectorAll('[data-options="option"]');
+  const elementForm3 = document.querySelector('[data-form="3"]');
   let count = 0;
   window.addEventListener("load", () => {
     buttonElementNext.forEach((button) => {
@@ -58,7 +59,9 @@ export default function mudancaDeEvent() {
         break;
       case "add-ons":
         count = 2;
-        console.log(option);
+        elementForm1.classList.add("noneJs");
+        elementForm2.classList.add("noneJs");
+        elementForm3.classList.remove("noneJs");
         break;
       case "summary":
         count = 3;
