@@ -11,13 +11,17 @@ export default function mudancaDeEvent() {
         event.preventDefault();
         switch (count) {
           case 0:
-            count++;
             elementForm1.classList.add("noneJs");
             elementForm2.classList.remove("noneJs");
+            numbers[++count].classList.add("numberClickJs");
+            numbers[--count].classList.remove("numberClickJs");
+            count++;
             break;
           case 1:
-            count++;
             elementForm2.classList.add("noneJs");
+            numbers[++count].classList.add("numberClickJs");
+            numbers[--count].classList.remove("numberClickJs");
+            count++;
         }
       });
     });
