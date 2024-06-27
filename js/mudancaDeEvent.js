@@ -1,31 +1,34 @@
 export default function mudancaDeEvent() {
-  const buttonElement = document.querySelectorAll("[data-button]");
+  const buttonElementNext = document.querySelectorAll("[data-button]");
   const elementForm1 = document.querySelector('[data-form="1"');
   const elementForm2 = document.querySelector('[data-form="2"]');
   const numbers = document.querySelectorAll('[data-numbers="number"]');
   const options = document.querySelectorAll('[data-options="option"]');
   let count = 0;
   window.addEventListener("load", () => {
-    buttonElement.forEach((button) => {
+    buttonElementNext.forEach((button) => {
       button.addEventListener("click", (event) => {
         event.preventDefault();
         switch (count) {
           case 0:
             elementForm1.classList.add("noneJs");
             elementForm2.classList.remove("noneJs");
-            numbers[++count].classList.add("numberClickJs");
-            numbers[--count].classList.remove("numberClickJs");
+            estilizaNumbersNext();
             count++;
             break;
           case 1:
             elementForm2.classList.add("noneJs");
-            numbers[++count].classList.add("numberClickJs");
-            numbers[--count].classList.remove("numberClickJs");
+            estilizaNumbersNext();
             count++;
         }
       });
     });
   });
+
+  function estilizaNumbersNext() {
+    numbers[++count].classList.add("numberClickJs");
+    numbers[--count].classList.remove("numberClickJs");
+  }
 
   function captaNumbers(e) {
     let number = Number(e.target.innerHTML);
