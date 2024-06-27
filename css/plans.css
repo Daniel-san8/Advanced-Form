@@ -72,3 +72,10 @@
     gap: 0;
   }
 }
+
+@media (max-width: 560px) {
+  .plans-items {
+    height: 70% !important;
+    width: 6rem !important;
+  }
+}

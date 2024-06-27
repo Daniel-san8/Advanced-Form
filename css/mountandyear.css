@@ -116,3 +116,8 @@
     font-size: 1rem;
   }
 }
+@media (max-width: 560px) {
+  .mountandyear {
+    margin: 0;
+  }
+}
