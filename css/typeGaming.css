@@ -1,12 +1,18 @@
 .types-gamings {
   margin-top: 1rem;
-  width: 130%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  flex-wrap: nowrap;
 }
 
 .type-game {
   display: flex;
   gap: 1.5rem;
   align-items: center;
+  background-color: #f8f9fe;
+  padding: 0.8rem;
+  border-radius: 5px;
 }
 
 .type-game div {
@@ -14,7 +20,20 @@
   flex-direction: column;
   gap: 0.4rem;
 }
+/* .type-game input[type="checkbox"] {
+  border-color: pink !important;
+} */
+.type-game div span {
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
+}
 
 .type-game-span {
   display: flex;
+  margin-left: auto;
+  color: hsl(243, 100%, 62%);
+}
+
+.info.step3 {
+  width: 80%;
 }
