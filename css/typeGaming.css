@@ -1,0 +1,16 @@
+.type-gaming {
+  margin-top: 1rem;
+}
+
+.type-gaming div {
+  display: flex;
+  background-color: red;
+}
+
+.type-gaming span {
+  margin-left: 1.5rem;
+}
+
+.type-gaming input {
+  margin-left: 1rem;
+}
