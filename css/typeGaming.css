@@ -1,16 +1,20 @@
-.type-gaming {
+.types-gamings {
   margin-top: 1rem;
+  width: 130%;
 }
 
-.type-gaming div {
+.type-game {
   display: flex;
-  background-color: red;
+  gap: 1.5rem;
+  align-items: center;
 }
 
-.type-gaming span {
-  margin-left: 1.5rem;
+.type-game div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
 }
 
-.type-gaming input {
-  margin-left: 1rem;
+.type-game-span {
+  display: flex;
 }
