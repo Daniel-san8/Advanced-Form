@@ -57,7 +57,7 @@
   transition: 0.3s;
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1071px) {
   .info form {
     margin-top: 0;
   }

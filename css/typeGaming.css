@@ -13,6 +13,7 @@
   background-color: #f8f9fe;
   padding: 0.8rem;
   border-radius: 5px;
+  width: 90%;
 }
 
 .type-game div {
@@ -35,5 +36,22 @@
 }
 
 .info.step3 {
-  width: 80%;
+  width: 70%;
+}
+
+@media (max-width: 1150px) {
+  .type-game {
+    padding: 0.2rem;
+  }
+}
+
+@media (max-width: 970px) {
+  .type-game {
+    padding: 0rem;
+  }
+}
+
+@media (max-width: 915px) {
+  .type-game div span {
+  }
 }

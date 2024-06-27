@@ -19,8 +19,14 @@ export default function mudancaDeEvent() {
             break;
           case 1:
             elementForm2.classList.add("noneJs");
+            elementForm3.classList.remove("noneJs");
             estilizaNumbersNext();
             count++;
+          case 2:
+          // elementForm3.classList.add("noneJs");
+          // // elementForm4.classList.add("noneJs");
+          // // estilizaNumbersNext();
+          // count++;
         }
       });
     });
@@ -36,11 +42,18 @@ export default function mudancaDeEvent() {
     if (number === 1) {
       elementForm1.classList.remove("noneJs");
       elementForm2.classList.add("noneJs");
+      elementForm3.classList.add("noneJs");
       count = 0;
     } else if (number === 2) {
       elementForm1.classList.add("noneJs");
       elementForm2.classList.remove("noneJs");
+      elementForm3.classList.add("noneJs");
       count = 1;
+    } else if (number === 3) {
+      elementForm1.classList.add("noneJs");
+      elementForm2.classList.add("noneJs");
+      elementForm3.classList.remove("noneJs");
+      count = 2;
     }
   }
 
@@ -51,11 +64,13 @@ export default function mudancaDeEvent() {
         count = 0;
         elementForm1.classList.remove("noneJs");
         elementForm2.classList.add("noneJs");
+        elementForm3.classList.add("noneJs");
         break;
       case "select plan":
         count = 1;
         elementForm1.classList.add("noneJs");
         elementForm2.classList.remove("noneJs");
+        elementForm3.classList.add("noneJs");
         break;
       case "add-ons":
         count = 2;
@@ -78,11 +93,6 @@ export default function mudancaDeEvent() {
   });
 }
 
-// } else if (number === 3) {
-//   elementForm1.classList.add("noneJs");
-//   elementForm2.classList.add("noneJs");
-//   elementForm3.classList.remove("noneJs");
-//   elementForm4.classList.add("noneJs");
 // } else if (number === 4) {
 //   elementForm1.classList.add("noneJs");
 //   elementForm2.classList.add("noneJs");
