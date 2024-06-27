@@ -55,7 +55,7 @@
 
 @media (max-width: 1250px) {
   .info.step2 {
-    margin: rem 1rem;
+    margin: 0rem 1rem;
   }
 }
 
@@ -91,7 +91,7 @@
 
 @media (max-width: 880px) {
   .info.step2 {
-    margin: 1rem 0;
+    margin: 0 1rem;
   }
 }
 
@@ -100,10 +100,6 @@
     padding: 0.8rem 3rem;
     text-wrap: nowrap;
     margin: 1rem;
-  }
-
-  .info.step2 {
-    margin: 1.125rem 2rem;
   }
 
   .plans {

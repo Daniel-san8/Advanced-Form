@@ -20,10 +20,9 @@
 
 @media (max-width: 810px) {
   .container {
-    width: 90%;
-    height: calc(100% + 17%);
+    width: 100%;
+    height: calc(100% + 40%);
     display: grid;
-    margin-top: 3rem;
   }
   .options {
     display: none !important;
@@ -55,15 +54,23 @@
     display: flex !important;
     font-size: 1rem !important;
     padding: 0.8rem !important;
-    width: 1.5rem !important;
+    width: 1.2rem !important;
     justify-content: center !important;
     font-weight: bold;
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 650px) {
   .numbers {
-    top: -11rem !important;
+    top: -15rem !important;
+  }
+  .container-img {
+    height: 80%;
+    width: 100%;
+    border-radius: 0.3rem;
+    margin: 0;
+    justify-self: center;
+    object-fit: cover;
   }
 }
 
