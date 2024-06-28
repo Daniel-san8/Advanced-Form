@@ -47,11 +47,35 @@
 
 @media (max-width: 970px) {
   .type-game {
-    padding: 0rem;
+    padding: 0.2rem;
   }
 }
 
-@media (max-width: 915px) {
-  .type-game div span {
+@media (max-width: 923px) {
+  .info.step3 button {
+    padding: 0.6rem;
+  }
+  .type-game {
+    width: 100%;
+  }
+
+  .info.step3 {
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 825px) {
+  .info.step3 {
+    margin: 0 1.8rem;
+    width: 90%;
+  }
+  .type-game-span {
+    margin-right: 3rem;
+  }
+  .type-game div {
+    margin-left: 2rem;
+  }
+  .type-game input[type="checkbox"] {
+    margin-left: 1rem;
   }
 }
