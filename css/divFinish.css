@@ -1,0 +1,20 @@
+.info.step4 {
+  width: 100%;
+}
+
+.div-finish {
+  background-color: hsl(206, 94%, 87%);
+  display: flex;
+  padding: 0 1rem;
+}
+
+.div-finish p {
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
+}
+
+#number-finish {
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
+  margin-left: auto;
+}
