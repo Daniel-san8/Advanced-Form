@@ -21,9 +21,7 @@
   flex-direction: column;
   gap: 0.4rem;
 }
-/* .type-game input[type="checkbox"] {
-  border-color: pink !important;
-} */
+
 .type-game div span {
   color: hsl(213, 96%, 18%);
   font-weight: bold;
@@ -41,17 +39,11 @@
 
 @media (max-width: 1150px) {
   .type-game {
-    padding: 0.2rem;
+    padding: 0.1rem;
   }
 }
 
-@media (max-width: 970px) {
-  .type-game {
-    padding: 0.2rem;
-  }
-}
-
-@media (max-width: 923px) {
+@media (max-width: 964px) {
   .info.step3 button {
     padding: 0.6rem;
   }
