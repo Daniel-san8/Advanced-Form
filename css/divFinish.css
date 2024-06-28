@@ -18,10 +18,3 @@
   font-weight: bold;
   margin-left: auto;
 }
-
-.div-change {
-  display: inline-block;
-  color: hsl(231, 11%, 63%);
-  text-decoration: underline;
-  cursor: pointer;
-}
