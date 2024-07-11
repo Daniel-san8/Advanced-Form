@@ -47,18 +47,21 @@ export default function mudancaDeEvent() {
         case 3:
           elementForm1.classList.remove("noneJs");
           elementForm2.classList.add("noneJs");
+          testa();
           count--;
           back++;
           break;
         case 2:
           elementForm2.classList.remove("noneJs");
           elementForm3.classList.add("noneJs");
+          testa();
           count--;
           back++;
           break;
         case 1:
           elementForm3.classList.remove("noneJs");
           elementForm4.classList.add("noneJs");
+          testa();
           count--;
           back++;
           break;
@@ -66,12 +69,25 @@ export default function mudancaDeEvent() {
     });
   });
 
-  function estilizaNumbersNext() {
-    numbers[++count].classList.add("numberClickJs");
-    numbers[--count].classList.remove("numberClickJs");
+  function testa() {
+    console.log(back);
+    switch (back) {
+      case 3:
+        numbers[0].classList.add("numberClickJs");
+        numbers[1].classList.remove("numberClickJs");
+        break;
+      case 2:
+        numbers[1].classList.add("numberClickJs");
+        numbers[2].classList.remove("numberClickJs");
+        break;
+      case 1:
+        numbers[2].classList.add("numberClickJs");
+        numbers[3].classList.remove("numberClickJs");
+        break;
+    }
   }
 
-  function desestilizaNumbersNext() {
+  function estilizaNumbersNext() {
     numbers[++count].classList.add("numberClickJs");
     numbers[--count].classList.remove("numberClickJs");
   }

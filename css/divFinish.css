@@ -75,10 +75,16 @@ hr {
   justify-content: space-between;
   padding: 1rem;
 }
-.container-button a {
+.container-button span {
   color: hsl(231, 11%, 63%);
   font-weight: bold;
-  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container-button span:hover {
+  color: hsl(213, 96%, 18%);
+  transition: 0.3s;
 }
 
 @media (max-width: 825px) {
