@@ -5,6 +5,7 @@ export default function mudancaDeEvent() {
   const numbers = document.querySelectorAll('[data-numbers="number"]');
   const options = document.querySelectorAll('[data-options="option"]');
   const elementForm3 = document.querySelector('[data-form="3"]');
+  const elementForm4 = document.querySelector('[data-form="4"]');
   let count = 0;
   window.addEventListener("load", () => {
     buttonElementNext.forEach((button) => {
@@ -23,10 +24,10 @@ export default function mudancaDeEvent() {
             estilizaNumbersNext();
             count++;
           case 2:
-          // elementForm3.classList.add("noneJs");
-          // // elementForm4.classList.add("noneJs");
-          // // estilizaNumbersNext();
-          // count++;
+            elementForm3.classList.add("noneJs");
+            elementForm4.classList.remove("noneJs");
+            estilizaNumbersNext();
+            count++;
         }
       });
     });
@@ -43,17 +44,25 @@ export default function mudancaDeEvent() {
       elementForm1.classList.remove("noneJs");
       elementForm2.classList.add("noneJs");
       elementForm3.classList.add("noneJs");
+      elementForm4.classList.add("noneJs");
       count = 0;
     } else if (number === 2) {
       elementForm1.classList.add("noneJs");
       elementForm2.classList.remove("noneJs");
       elementForm3.classList.add("noneJs");
+      elementForm4.classList.add("noneJs");
       count = 1;
     } else if (number === 3) {
       elementForm1.classList.add("noneJs");
       elementForm2.classList.add("noneJs");
       elementForm3.classList.remove("noneJs");
+      elementForm4.classList.add("noneJs");
       count = 2;
+    } else if (number === 4) {
+      elementForm1.classList.add("noneJs");
+      elementForm2.classList.add("noneJs");
+      elementForm3.classList.add("noneJs");
+      elementForm4.classList.remove("noneJs");
     }
   }
 
@@ -65,22 +74,28 @@ export default function mudancaDeEvent() {
         elementForm1.classList.remove("noneJs");
         elementForm2.classList.add("noneJs");
         elementForm3.classList.add("noneJs");
+        elementForm4.classList.add("noneJs");
         break;
       case "select plan":
         count = 1;
         elementForm1.classList.add("noneJs");
         elementForm2.classList.remove("noneJs");
         elementForm3.classList.add("noneJs");
+        elementForm4.classList.add("noneJs");
         break;
       case "add-ons":
         count = 2;
         elementForm1.classList.add("noneJs");
         elementForm2.classList.add("noneJs");
         elementForm3.classList.remove("noneJs");
+        elementForm4.classList.add("noneJs");
         break;
       case "summary":
-        count = 3;
-        console.log(option);
+        count = 4;
+        elementForm1.classList.add("noneJs");
+        elementForm2.classList.add("noneJs");
+        elementForm3.classList.add("noneJs");
+        elementForm4.classList.remove("noneJs");
         break;
     }
   }
@@ -92,10 +107,3 @@ export default function mudancaDeEvent() {
     option.addEventListener("click", captaOptions);
   });
 }
-
-// } else if (number === 4) {
-//   elementForm1.classList.add("noneJs");
-//   elementForm2.classList.add("noneJs");
-//   elementForm3.classList.add("noneJs");
-//   elementForm4.classList.remove("noneJs");
-// }
