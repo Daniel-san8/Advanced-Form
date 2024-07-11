@@ -1,3 +1,48 @@
 .info.step4 {
   width: 100%;
 }
+
+.container-finish {
+  background-color: hsl(206, 94%, 87%);
+}
+
+.container-options-finish {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.arcade-change-finish {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
+}
+.arcade-change-finish a {
+  color: hsl(231, 11%, 63%);
+  font-weight: normal;
+}
+
+.priceOn-finish {
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
+}
+
+hr {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.options-items-finish {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.option-item-finish {
+  display: flex;
+  justify-content: space-between;
+}
