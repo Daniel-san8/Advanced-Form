@@ -23,11 +23,13 @@ export default function mudancaDeEvent() {
             elementForm3.classList.remove("noneJs");
             estilizaNumbersNext();
             count++;
+            break;
           case 2:
             elementForm3.classList.add("noneJs");
             elementForm4.classList.remove("noneJs");
             estilizaNumbersNext();
             count++;
+            break;
         }
       });
     });
@@ -63,6 +65,7 @@ export default function mudancaDeEvent() {
       elementForm2.classList.add("noneJs");
       elementForm3.classList.add("noneJs");
       elementForm4.classList.remove("noneJs");
+      count = 3;
     }
   }
 
