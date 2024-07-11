@@ -46,3 +46,35 @@ hr {
   display: flex;
   justify-content: space-between;
 }
+
+.item-finish {
+  color: hsl(231, 11%, 63%);
+}
+.item-finish2 {
+  color: hsl(213, 96%, 18%);
+}
+
+.container-total-finish {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.total-item-finish {
+  font-size: 1.5rem;
+  color: hsl(243, 100%, 62%);
+  font-weight: bold;
+}
+
+.container-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.container-button a {
+  color: hsl(231, 11%, 63%);
+  font-weight: bold;
+  text-decoration: none;
+}
