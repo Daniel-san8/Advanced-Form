@@ -1,5 +1,6 @@
 export default function mudancaDeEvent() {
   const buttonElementNext = document.querySelectorAll("[data-button]");
+  const buttonElementPrevious = document.querySelectorAll("[data-goBack]");
   const elementForm1 = document.querySelector('[data-form="1"');
   const elementForm2 = document.querySelector('[data-form="2"]');
   const numbers = document.querySelectorAll('[data-numbers="number"]');
@@ -7,6 +8,7 @@ export default function mudancaDeEvent() {
   const elementForm3 = document.querySelector('[data-form="3"]');
   const elementForm4 = document.querySelector('[data-form="4"]');
   let count = 0;
+  let back = 4;
   window.addEventListener("load", () => {
     buttonElementNext.forEach((button) => {
       button.addEventListener("click", (event) => {
@@ -17,25 +19,40 @@ export default function mudancaDeEvent() {
             elementForm2.classList.remove("noneJs");
             estilizaNumbersNext();
             count++;
+            back--;
             break;
           case 1:
             elementForm2.classList.add("noneJs");
             elementForm3.classList.remove("noneJs");
             estilizaNumbersNext();
             count++;
+            back--;
             break;
           case 2:
             elementForm3.classList.add("noneJs");
             elementForm4.classList.remove("noneJs");
             estilizaNumbersNext();
             count++;
+            back--;
             break;
         }
       });
     });
   });
 
+  buttonElementPrevious.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      e.preventDefault();
+      console.log(back);
+    });
+  });
+
   function estilizaNumbersNext() {
+    numbers[++count].classList.add("numberClickJs");
+    numbers[--count].classList.remove("numberClickJs");
+  }
+
+  function desestilizaNumbersNext() {
     numbers[++count].classList.add("numberClickJs");
     numbers[--count].classList.remove("numberClickJs");
   }
@@ -48,24 +65,28 @@ export default function mudancaDeEvent() {
       elementForm3.classList.add("noneJs");
       elementForm4.classList.add("noneJs");
       count = 0;
+      back = 4;
     } else if (number === 2) {
       elementForm1.classList.add("noneJs");
       elementForm2.classList.remove("noneJs");
       elementForm3.classList.add("noneJs");
       elementForm4.classList.add("noneJs");
       count = 1;
+      back = 3;
     } else if (number === 3) {
       elementForm1.classList.add("noneJs");
       elementForm2.classList.add("noneJs");
       elementForm3.classList.remove("noneJs");
       elementForm4.classList.add("noneJs");
       count = 2;
+      back = 2;
     } else if (number === 4) {
       elementForm1.classList.add("noneJs");
       elementForm2.classList.add("noneJs");
       elementForm3.classList.add("noneJs");
       elementForm4.classList.remove("noneJs");
       count = 3;
+      back = 1;
     }
   }
 
@@ -74,6 +95,7 @@ export default function mudancaDeEvent() {
     switch (option) {
       case "your info":
         count = 0;
+        back = 4;
         elementForm1.classList.remove("noneJs");
         elementForm2.classList.add("noneJs");
         elementForm3.classList.add("noneJs");
@@ -81,6 +103,7 @@ export default function mudancaDeEvent() {
         break;
       case "select plan":
         count = 1;
+        back = 3;
         elementForm1.classList.add("noneJs");
         elementForm2.classList.remove("noneJs");
         elementForm3.classList.add("noneJs");
@@ -88,6 +111,7 @@ export default function mudancaDeEvent() {
         break;
       case "add-ons":
         count = 2;
+        back = 2;
         elementForm1.classList.add("noneJs");
         elementForm2.classList.add("noneJs");
         elementForm3.classList.remove("noneJs");
@@ -95,6 +119,7 @@ export default function mudancaDeEvent() {
         break;
       case "summary":
         count = 4;
+        back = 1;
         elementForm1.classList.add("noneJs");
         elementForm2.classList.add("noneJs");
         elementForm3.classList.add("noneJs");
