@@ -43,7 +43,26 @@ export default function mudancaDeEvent() {
   buttonElementPrevious.forEach((button) => {
     button.addEventListener("click", (e) => {
       e.preventDefault();
-      console.log(back);
+      switch (back) {
+        case 3:
+          elementForm1.classList.remove("noneJs");
+          elementForm2.classList.add("noneJs");
+          count--;
+          back++;
+          break;
+        case 2:
+          elementForm2.classList.remove("noneJs");
+          elementForm3.classList.add("noneJs");
+          count--;
+          back++;
+          break;
+        case 1:
+          elementForm3.classList.remove("noneJs");
+          elementForm4.classList.add("noneJs");
+          count--;
+          back++;
+          break;
+      }
     });
   });
 
