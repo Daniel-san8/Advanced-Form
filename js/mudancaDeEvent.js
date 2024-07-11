@@ -1,12 +1,16 @@
 export default function mudancaDeEvent() {
   const buttonElementNext = document.querySelectorAll("[data-button]");
   const buttonElementPrevious = document.querySelectorAll("[data-goBack]");
+
   const elementForm1 = document.querySelector('[data-form="1"');
   const elementForm2 = document.querySelector('[data-form="2"]');
-  const numbers = document.querySelectorAll('[data-numbers="number"]');
-  const options = document.querySelectorAll('[data-options="option"]');
   const elementForm3 = document.querySelector('[data-form="3"]');
   const elementForm4 = document.querySelector('[data-form="4"]');
+
+  const numbers = document.querySelectorAll('[data-numbers="number"]');
+  const options = document.querySelectorAll('[data-options="option"]');
+  const datachange = document.querySelector("[data-change]");
+
   let count = 0;
   let back = 4;
   window.addEventListener("load", () => {
@@ -47,21 +51,21 @@ export default function mudancaDeEvent() {
         case 3:
           elementForm1.classList.remove("noneJs");
           elementForm2.classList.add("noneJs");
-          testa();
+          estilizaPrevious();
           count--;
           back++;
           break;
         case 2:
           elementForm2.classList.remove("noneJs");
           elementForm3.classList.add("noneJs");
-          testa();
+          estilizaPrevious();
           count--;
           back++;
           break;
         case 1:
           elementForm3.classList.remove("noneJs");
           elementForm4.classList.add("noneJs");
-          testa();
+          estilizaPrevious();
           count--;
           back++;
           break;
@@ -69,8 +73,15 @@ export default function mudancaDeEvent() {
     });
   });
 
-  function testa() {
-    console.log(back);
+  datachange.addEventListener("click", () => {
+    elementForm3.classList.remove("noneJs");
+    elementForm4.classList.add("noneJs");
+    estilizaPrevious();
+    count--;
+    back++;
+  });
+
+  function estilizaPrevious() {
     switch (back) {
       case 3:
         numbers[0].classList.add("numberClickJs");
