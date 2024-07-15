@@ -77,8 +77,8 @@ export default function mudancaDeEvent() {
     elementForm3.classList.remove("noneJs");
     elementForm4.classList.add("noneJs");
     estilizaPrevious();
-    count--;
-    back++;
+    count = 2;
+    back = 2;
   });
 
   function estilizaPrevious() {
