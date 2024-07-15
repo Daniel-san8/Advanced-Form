@@ -15,8 +15,9 @@ export default function nextAndBack() {
     game.addEventListener("click", (e) => {
       let divGame = e.currentTarget;
       let active = divGame.classList.contains("checkedStyle");
+      console.log(divGame);
       switch (divGame) {
-        case divGame:
+        case active:
           break;
 
         default:
